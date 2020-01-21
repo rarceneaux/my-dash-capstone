@@ -27,4 +27,11 @@ const getSingleEvent = (eventId) => axios.get(`${baseUrl}/events/${eventId}.json
 
 const addNewEvent = (EventInfo) => axios.post(`${baseUrl}/events.json`, EventInfo);
 
-export default { getEventsByUid, getSingleEvent, addNewEvent };
+const deleteAEvent = (eventId) => axios.delete(`${baseUrl}/events/${eventId}.json`);
+
+export default {
+  getEventsByUid,
+  getSingleEvent,
+  addNewEvent,
+  deleteAEvent,
+};

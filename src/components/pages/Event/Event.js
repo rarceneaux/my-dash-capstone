@@ -2,7 +2,7 @@ import React from 'react';
 import authData from '../../../helpers/data/authData';
 import eventData from '../../../helpers/data/eventData';
 import EventCard from '../../shared/EventCard/EventCard';
-import EventForm from '../EventForm/EventForm';
+// import EventForm from '../EventForm/EventForm';
 
 import './Event.scss';
 
@@ -21,10 +21,16 @@ class Event extends React.Component {
     this.getEvents();
   }
 
+  deleteAEvent = (eventId) => {
+    eventData.deleteAEvent(eventId)
+      .then(() => this.getEvents())
+      .catch((err) => console.error('err', err));
+  }
+
   render() {
     return (
    <div className="Event">
-      {this.state.events.map((event) => <EventCard key={event.id} event={event}/>)}
+      {this.state.events.map((event) => <EventCard key={event.id} event={event} deleteAEvent={this.deleteAEvent} />)}
    </div>
     );
   }
