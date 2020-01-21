@@ -9,6 +9,13 @@ import eventShape from '../../../helpers/propz/eventShape';
 class EventCard extends React.Component {
   static propTypes = {
     event: eventShape.eventShape,
+    deleteAEvent: PropTypes.func,
+  }
+
+  deleteEventEvent = (e) => {
+    e.preventDefault();
+    const { deleteAEvent, event } = this.props;
+    deleteAEvent(event.id);
   }
 
   render() {
@@ -19,7 +26,7 @@ class EventCard extends React.Component {
   <div className="card-body">
   <h5 className="card-title">{event.title}</h5>
   <p className="card-text">{event.summary}</p>
-    {/* <a href="#" className="btn btn-primary">Go somewhere</a> */}
+  <button className="btn btn-secondary" onClick={this.deleteEventEvent}>Delete</button>
     </div>
     </div>
     );
