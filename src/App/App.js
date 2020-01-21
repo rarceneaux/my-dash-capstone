@@ -5,7 +5,7 @@ import {
   from 'react-router-dom';
 import firebase from 'firebase/app';
 import Auth from '../components/pages/Auth/Auth';
-import NavBar from '../components/shared/NavBar/NavBar';
+import NavBar from '../components/shared/NavBar/Navbar';
 import firebaseConnection from '../helpers/data/connections';
 import Home from '../components/pages/Home/Home';
 import Event from '../components/pages/Event/Event';
@@ -33,8 +33,10 @@ class App extends React.Component {
     authed: false,
   }
 
+// Console.log user to get info for stretch goal user profile
   componentDidMount() {
     this.removeListener = firebase.auth().onAuthStateChanged((user) => {
+      console.log(user);
       if (user) {
         this.setState({ authed: true });
       } else {
