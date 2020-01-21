@@ -1,12 +1,68 @@
 import React from 'react';
-import './App.css';
+import {
+  BrowserRouter as Router, Route, Redirect, Switch,
+}
+  from 'react-router-dom';
+import firebase from 'firebase/app';
+import Auth from '../components/pages/Auth/Auth';
+import NavBar from '../components/shared/NavBar/NavBar';
+import firebaseConnection from '../helpers/data/connections';
+import Home from '../components/pages/Home/Home';
+import Event from '../components/pages/Event/Event';
+import EventForm from '../components/pages/EventForm/EventForm';
 
-function App() {
-  return (
+
+import './App.scss';
+
+import 'firebase/auth';
+
+// will be important for backend
+const PublicRoute = ({ component: Component, authed, ...rest }) => {
+  const routeChecker = (props) => (authed === false ? <Component {...props} {...rest}/> : <Redirect to={{ pathname: '/', state: { from: props.location } }} />);
+  return <Route {...rest} render={(props) => routeChecker(props)} />;
+};
+const PrivateRoute = ({ component: Component, authed, ...rest }) => {
+  const routeChecker = (props) => (authed === true ? <Component {...props} {...rest}/> : <Redirect to={{ pathname: '/auth', state: { from: props.location } }} />);
+  return <Route {...rest} render={(props) => routeChecker(props)} />;
+};
+
+firebaseConnection();
+
+class App extends React.Component {
+  state = {
+    authed: false,
+  }
+
+  componentDidMount() {
+    this.removeListener = firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        this.setState({ authed: true });
+      } else {
+        this.setState({ authed: false });
+      }
+    });
+  }
+
+  componentWillUnmount() {
+    this.removeListener();
+  }
+
+  render() {
+    const { authed } = this.state;
+    return (
     <div className="App">
-      <button className="btn btn-danger">Blind Spots</button>
+      <Router>
+      <NavBar authed={authed}/>
+        <Switch>
+        <PrivateRoute path="/" exact component={Home} authed={authed}/>
+        <PublicRoute path="/auth" exact component={Auth} authed={authed}/>
+        <PrivateRoute path="/event" exact component={Event} authed={authed}/>
+        <PrivateRoute path="/event/new" exact component={EventForm} authed={authed}/>
+        </Switch>
+      </Router>
     </div>
-  );
+    );
+  }
 }
 
 export default App;
