@@ -23,4 +23,8 @@ const getEventsByUid = (uid) => new Promise((resolve, reject) => {
     });
 });
 
-export default { getEventsByUid };
+const getSingleEvent = (eventId) => axios.get(`${baseUrl}/events/${eventId}.json`);
+
+const addNewEvent = (EventInfo) => axios.post(`${baseUrl}/events.json`, EventInfo);
+
+export default { getEventsByUid, getSingleEvent, addNewEvent };

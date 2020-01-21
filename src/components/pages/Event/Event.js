@@ -2,6 +2,7 @@ import React from 'react';
 import authData from '../../../helpers/data/authData';
 import eventData from '../../../helpers/data/eventData';
 import EventCard from '../../shared/EventCard/EventCard';
+import EventForm from '../EventForm/EventForm';
 
 import './Event.scss';
 
