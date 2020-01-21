@@ -1,0 +1,14 @@
+{
+  "event1": {
+    "title": "Born 2-7-1980",
+    "summary": "The day the cards were dealt to me!",
+    "imgUrl": "https://reactnativestarter-hosting-mobilehub-132039435.s3.amazonaws.com/MyLife.png",
+    "uid": "7cWpK0AfFMS7WvawgdjcEqAayZK2"
+  },
+  "event2": {
+    "title": "December 15, 1989",
+    "summary": "The day my grandmother lost her fight to colon cancer and the day life after death began.",
+    "imgUrl": "https://reactnativestarter-hosting-mobilehub-132039435.s3.amazonaws.com/graveyard.JPG",
+    "uid": "7cWpK0AfFMS7WvawgdjcEqAayZK2"
+  }
+}

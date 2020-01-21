@@ -23,7 +23,7 @@ render() {
     <li className="nav-item"><Link className="nav-link" to="/">Home</Link></li>
     <li className="nav-item"><Link className="nav-link" to="/event">Events</Link></li>
     <li className="nav-item"><Link className="nav-link" to="/event/new">Add New Event</Link></li>
-    <li className="nav-item"><button className="nav-link btn btn-secondary" onClick={this.logMeOut}>Logout</button></li>
+    <li className="nav-item"><p className="nav-link" onClick={this.logMeOut}>Logout</p></li>
    </ul>
       );
     }
@@ -32,7 +32,7 @@ render() {
   };
 
   return (
-  <div className="MyNavbar">
+  <div className="Navbar">
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <Link className="navbar-brand" to="/">My-Dash</Link>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
