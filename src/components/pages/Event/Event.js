@@ -29,7 +29,7 @@ class Event extends React.Component {
 
   render() {
     return (
-   <div className="Event">
+      <div className="Event">
       {this.state.events.map((event) => <EventCard key={event.id} event={event} deleteAEvent={this.deleteAEvent} />)}
    </div>
     );

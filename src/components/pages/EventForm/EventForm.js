@@ -74,7 +74,7 @@ render() {
          <form className="event-details">
        <div className="form-group">
          <label htmlFor="event-title">Event Title</label>
-         <input 
+         <input
          type="text"
          className="form-control"
          id="event-title"
@@ -85,17 +85,17 @@ render() {
        </div>
        <div className="form-group">
          <label htmlFor="event-summary">Event Summary</label>
-         <input 
+         <input
          type="text"
          className="form-control"
          id="event-summary"
-         placeholder="Type Event Details"
+         placeholder="Enter Event Summary"
          value={summary}
          onChange={this.summaryChange}
          />
        </div>
        <div className="form-group">
-         <label htmlFor="event-image">Event Img</label>
+         <label htmlFor="event-image">Event Photo</label>
          <input
          type="text"
          className="form-control"

@@ -33,7 +33,7 @@ class App extends React.Component {
     authed: false,
   }
 
-// Console.log user to get info for stretch goal user profile
+  // Console.log user to get info for stretch goal user profile
   componentDidMount() {
     this.removeListener = firebase.auth().onAuthStateChanged((user) => {
       console.log(user);

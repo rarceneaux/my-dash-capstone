@@ -5,11 +5,18 @@
 
 .EventCard{
   height: 750px;
-  width: 500px;
-  background-color: lightgray;
+  width: 450px;
+  background-color: darkgray;
   margin: 25px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
 }
 
 .edit{
   margin:15px;
+}
+
+img{
+  height: 300px;
+  width:300px;
 }
