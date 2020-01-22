@@ -17,7 +17,7 @@ class EventForm extends React.Component {
       eventData.getSingleEvent(eventId)
         .then((response) => {
           const event = response.data;
-          this.setState({ eventTitle: event.title, eventSummary: event.summary, eventImgUrl: event.imgUrl });
+          this.setState({ title: event.title, summary: event.summary, imgUrl: event.imgUrl });
           console.log(this.state);
         })
         .catch((err) => console.error('err', err));
@@ -67,7 +67,7 @@ editEventAEvent = (e) => {
 }
 
 render() {
-  const { eventTitle, eventSummary, eventImgUrl } = this.state;
+  const { title, summary, imgUrl } = this.state;
   const { eventId } = this.props.match.params;
   return (
       <div className="EventForm">
@@ -79,7 +79,7 @@ render() {
          className="form-control"
          id="event-title"
          placeholder="Event Title"
-         value={eventTitle}
+         value={title}
          onChange={this.titleChange}
          />
        </div>
@@ -90,7 +90,7 @@ render() {
          className="form-control"
          id="event-summary"
          placeholder="Type Event Details"
-         value={eventSummary}
+         value={summary}
          onChange={this.summaryChange}
          />
        </div>
@@ -101,7 +101,7 @@ render() {
          className="form-control"
          id="event-image"
          placeholder="Add Event Photo"
-         value={eventImgUrl}
+         value={imgUrl}
          onChange={this.eventImgUrlChange}
          />
        </div>
