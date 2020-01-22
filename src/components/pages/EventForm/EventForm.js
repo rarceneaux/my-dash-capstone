@@ -6,9 +6,9 @@ import './EventForm.scss';
 
 class EventForm extends React.Component {
   state = {
-    eventTitle: '',
-    eventSummary: '',
-    eventImgUrl: '',
+    title: '',
+    summary: '',
+    imgUrl: '',
   }
 
   componentDidMount() {
@@ -16,37 +16,52 @@ class EventForm extends React.Component {
     if (eventId) {
       eventData.getSingleEvent(eventId)
         .then((response) => {
-          this.setState({ eventTitle: response.data.eventTitle, eventSummary: response.data.eventSummary, eventImgUrl: response.data.eventImgUrl });
-          this.getEventData(eventId);
+          const event = response.data;
+          this.setState({ eventTitle: event.title, eventSummary: event.summary, eventImgUrl: event.imgUrl });
+          console.log(this.state);
         })
-        .catch((err) => console.error('error in Event form', err));
+        .catch((err) => console.error('err', err));
     }
   }
 
 titleChange = (e) => {
   e.preventDefault();
-  this.setState({ eventTitle: e.target.value });
+  this.setState({ title: e.target.value });
 }
 
 summaryChange = (e) => {
   e.preventDefault();
-  this.setState({ eventSummary: e.target.value });
+  this.setState({ summary: e.target.value });
 }
 
 eventImgUrlChange = (e) => {
   e.preventDefault();
-  this.setState({ eventImgUrl: e.target.value });
+  this.setState({ imgUrl: e.target.value });
 }
 
-saveEventEvent = (e) => {
+saveEventAEvent = (e) => {
   e.preventDefault();
   const newEvent = {
-    title: this.state.eventTitle,
-    summary: this.state.eventSummary,
-    imgUrl: this.state.eventImgUrl,
+    title: this.state.title,
+    summary: this.state.summary,
+    imgUrl: this.state.imgUrl,
     uid: authData.getUid(),
   };
   eventData.addNewEvent(newEvent)
+    .then(() => this.props.history.push('/event'))
+    .catch((err) => console.error('err', err));
+}
+
+editEventAEvent = (e) => {
+  const { eventId } = this.props.match.params;
+  e.preventDefault();
+  const newEvent = {
+    title: this.state.title,
+    summary: this.state.summary,
+    imgUrl: this.state.imgUrl,
+    uid: authData.getUid(),
+  };
+  eventData.updateAEvent(eventId, newEvent)
     .then(() => this.props.history.push('/event'))
     .catch((err) => console.error('err', err));
 }
@@ -91,8 +106,8 @@ render() {
          />
        </div>
        { eventId
-         ? <button className="btn btn-secondary">Save Event</button>
-         : <button className="btn btn-secondary" onClick={this.saveEventEvent}>Save</button>
+         ? <button className="btn btn-secondary" onClick={this.editEventAEvent}>Save Event</button>
+         : <button className="btn btn-secondary" onClick={this.saveEventAEvent}>Save</button>
        }
       </form>
       </div>
