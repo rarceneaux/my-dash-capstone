@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 import './EventCard.scss';
@@ -26,6 +26,7 @@ class EventCard extends React.Component {
   <div className="card-body">
   <h5 className="card-title">{event.title}</h5>
   <p className="card-text">{event.summary}</p>
+  <Link className="btn btn-secondary edit" to={`/event/${event.id}/edit`}>Edit</Link>
   <button className="btn btn-secondary" onClick={this.deleteEventEvent}>Delete</button>
     </div>
     </div>
