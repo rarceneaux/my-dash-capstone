@@ -24,10 +24,11 @@ class EventCard extends React.Component {
 <div className="EventCard">
   <img src={event.imgUrl} className="card-img-top" alt="..."/>
   <div className="card-body">
-  <h5 className="card-title">{event.title}</h5>
+  <h5 className="card-title">Title: {event.title}</h5>
+  <h2 className="text-center">Summary:</h2>
   <p className="card-text">{event.summary}</p>
-  <Link className="btn btn-secondary edit" to={`/event/${event.id}/edit`}>Edit</Link>
-  <button className="btn btn-secondary" onClick={this.deleteEventEvent}>Delete</button>
+  <Link className="btn btn-secondary edit" to={`/event/${event.id}/edit`}>Edit Event</Link>
+  <button className="btn btn-secondary" onClick={this.deleteEventEvent}>Delete Event</button>
     </div>
     </div>
     );
