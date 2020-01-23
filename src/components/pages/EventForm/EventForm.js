@@ -106,7 +106,7 @@ render() {
          />
        </div>
        { eventId
-         ? <button className="btn btn-secondary" onClick={this.editEventAEvent}>Save Event</button> && <button className="btn btn-secondary" onClick={this.editEventAEvent}>Cancel</button>
+         ? <button className="btn btn-secondary" onClick={this.editEventAEvent}>Save Event</button>
          : <button className="btn btn-secondary" onClick={this.saveEventAEvent}>Save</button>
        }
       </form>

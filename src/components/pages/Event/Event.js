@@ -2,13 +2,13 @@ import React from 'react';
 import authData from '../../../helpers/data/authData';
 import eventData from '../../../helpers/data/eventData';
 import EventCard from '../../shared/EventCard/EventCard';
-// import EventForm from '../EventForm/EventForm';
 
 import './Event.scss';
 
 class Event extends React.Component {
   state = {
     events: [],
+    bibles: [],
   }
 
   getEvents = () => {
@@ -17,8 +17,15 @@ class Event extends React.Component {
       .catch((err) => console.error('error from events', err));
   }
 
+  getBiblesInfo = () => {
+    eventData.getBibles()
+      .then((bibles) => this.setState({ bibles }))
+      .catch((err) => console.error('error from bibles', err));
+  }
+
   componentDidMount() {
     this.getEvents();
+    this.getBiblesInfo();
   }
 
   deleteAEvent = (eventId) => {
@@ -28,9 +35,11 @@ class Event extends React.Component {
   }
 
   render() {
+    const { bibles } = this.props;
     return (
       <div className="Event">
-      {this.state.events.map((event) => <EventCard key={event.id} event={event} deleteAEvent={this.deleteAEvent} />)}
+        {bibles}
+      {this.state.events.map((event) => <EventCard key={event.id} event={event} bibles={this.state.bibles} deleteAEvent={this.deleteAEvent}/>)}
    </div>
     );
   }

@@ -55,7 +55,7 @@ class App extends React.Component {
     return (
     <div className="App">
       <Router>
-      <NavBar authed={authed}/>
+      <NavBar authed={authed} userObj={userObj}/>
         <Switch>
         <PrivateRoute path="/" exact component={Profile} authed={authed} userObj={userObj}/>
         <PublicRoute path="/auth" exact component={Auth} authed={authed}/>
