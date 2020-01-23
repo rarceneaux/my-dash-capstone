@@ -22,7 +22,7 @@ class EventCard extends React.Component {
     const { event } = this.props;
     return (
 <div className="EventCard">
-  <img src={event.imgUrl} className="card-img-top" alt="..."/>
+  <img src={event.imgUrl} className="rounded-circle bs" alt="..."/>
   <div className="card-body">
   <h5 className="card-title">Title: {event.title}</h5>
   <h2 className="text-center">Summary:</h2>

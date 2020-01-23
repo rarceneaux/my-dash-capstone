@@ -7,7 +7,7 @@ import firebase from 'firebase/app';
 import Auth from '../components/pages/Auth/Auth';
 import NavBar from '../components/shared/NavBar/Navbar';
 import firebaseConnection from '../helpers/data/connections';
-import Home from '../components/pages/Home/Home';
+import Profile from '../components/pages/Profile/Profile';
 import Event from '../components/pages/Event/Event';
 import EventForm from '../components/pages/EventForm/EventForm';
 
@@ -31,14 +31,15 @@ firebaseConnection();
 class App extends React.Component {
   state = {
     authed: false,
+    userObj: '',
   }
 
   // Console.log user to get info for stretch goal user profile
   componentDidMount() {
-    this.removeListener = firebase.auth().onAuthStateChanged((user) => {
-      console.log(user);
-      if (user) {
-        this.setState({ authed: true });
+    this.removeListener = firebase.auth().onAuthStateChanged((userObj) => {
+      console.log(userObj);
+      if (userObj) {
+        this.setState({ authed: true, userObj });
       } else {
         this.setState({ authed: false });
       }
@@ -50,13 +51,13 @@ class App extends React.Component {
   }
 
   render() {
-    const { authed } = this.state;
+    const { authed, userObj } = this.state;
     return (
     <div className="App">
       <Router>
       <NavBar authed={authed}/>
         <Switch>
-        <PrivateRoute path="/" exact component={Home} authed={authed}/>
+        <PrivateRoute path="/" exact component={Profile} authed={authed} userObj={userObj}/>
         <PublicRoute path="/auth" exact component={Auth} authed={authed}/>
         <PrivateRoute path="/event" exact component={Event} authed={authed}/>
         <PrivateRoute path="/event/new" exact component={EventForm} authed={authed}/>
