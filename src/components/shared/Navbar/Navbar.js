@@ -20,7 +20,7 @@ render() {
     if (authed) {
       return (
     <ul className="navbar-nav ml-auto">
-    <li className="nav-item"><Link className="nav-link" to="/">Home</Link></li>
+    <li className="nav-item"><Link className="nav-link" to="/">Profile</Link></li>
     <li className="nav-item"><Link className="nav-link" to="/event">Events</Link></li>
     <li className="nav-item"><Link className="nav-link" to="/event/new">Add New Event</Link></li>
     <li className="nav-item"><p className="nav-link" onClick={this.logMeOut}>Logout</p></li>
