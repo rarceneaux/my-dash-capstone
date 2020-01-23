@@ -31,10 +31,28 @@ const deleteAEvent = (eventId) => axios.delete(`${baseUrl}/events/${eventId}.jso
 
 const updateAEvent = (eventId, newEventInfo) => axios.put(`${baseUrl}/events/${eventId}.json`, newEventInfo);
 
+const { key } = apiKeys.bibleRequest;
+const bibleBaseUrl = 'https://api.scripture.api.bible/v1/bibles/de4e12af7f28f599-01/verses/JHN.3.16';
+
+const getBibles = () => new Promise((resolve, reject) => {
+  axios
+    .get(`${bibleBaseUrl}`, {
+      headers: {
+        'api-key': key,
+      },
+    })
+    .then((results) => {
+      resolve(results.data);
+      console.log(results.data);
+    })
+    .catch((error) => reject(error));
+});
+
 export default {
   getEventsByUid,
   getSingleEvent,
   addNewEvent,
   deleteAEvent,
   updateAEvent,
+  getBibles,
 };
