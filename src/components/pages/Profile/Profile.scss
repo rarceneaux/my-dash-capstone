@@ -1,13 +1,13 @@
-.Profile{
- display:flex;
- justify-content: center;
- background-color: lightgrey;
-}
+// .Profile{
+//  display:flex;
+//  justify-content: center;
+//  background-color: lightgrey;
+// }
 
 .pic{
-  width: 300px;
-  height: 450px;
-  margin: 25px;
+  height: 300px;
+  width:300px;
+  margin: 15px;
 }
 
 // .card-body{
@@ -17,4 +17,13 @@
   
 .view{
   margin:15px;
+}
+
+.what{
+  background-color: rgba(231, 235, 240, 0.966);
+  margin: 50px;
+}
+
+.ray{
+  margin: 15px;
 }

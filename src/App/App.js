@@ -5,7 +5,7 @@ import {
   from 'react-router-dom';
 import firebase from 'firebase/app';
 import Auth from '../components/pages/Auth/Auth';
-import NavBar from '../components/shared/NavBar/Navbar';
+import NavBar from '../components/shared/NavBar/NavBar';
 import firebaseConnection from '../helpers/data/connections';
 import Profile from '../components/pages/Profile/Profile';
 import Event from '../components/pages/Event/Event';

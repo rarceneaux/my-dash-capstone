@@ -5,11 +5,12 @@
 
 .EventCard{
   height: 600px;
-  width: 450px;
-  background-color: darkgray;
+  width: 500px;
+  background-color:lightgray;
   margin: 25px;
   box-sizing: border-box;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+  // border-radius: 25px;
 }
 
 .edit{
@@ -23,4 +24,18 @@ img{
 
 .bs{
   margin:15px;
+  border: solid white thick;
 }
+
+.footer{
+  background-color: lightgray;
+}
+
+// .rt-arrow {
+//   // left: auto;
+//   height: 25px;
+//   width: 25px;
+//   float:right;
+//   margin:-20px;
+//   color: lightgray;
+// }
