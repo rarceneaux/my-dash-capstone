@@ -5,11 +5,12 @@ import {
   from 'react-router-dom';
 import firebase from 'firebase/app';
 import Auth from '../components/pages/Auth/Auth';
-import NavBar from '../components/shared/NavBar/NavBar';
+import Navbar from '../components/shared/Navbar/Navbar';
 import firebaseConnection from '../helpers/data/connections';
 import Profile from '../components/pages/Profile/Profile';
 import Event from '../components/pages/Event/Event';
 import EventForm from '../components/pages/EventForm/EventForm';
+import Footer from '../components/shared/Footer/Footer';
 
 
 import './App.scss';
@@ -55,13 +56,14 @@ class App extends React.Component {
     return (
     <div className="App">
       <Router>
-      <NavBar authed={authed} userObj={userObj}/>
+      <Navbar authed={authed} userObj={userObj}/>
         <Switch>
         <PrivateRoute path="/" exact component={Profile} authed={authed} userObj={userObj}/>
         <PublicRoute path="/auth" exact component={Auth} authed={authed}/>
         <PrivateRoute path="/event" exact component={Event} authed={authed}/>
         <PrivateRoute path="/event/new" exact component={EventForm} authed={authed}/>
         <PrivateRoute path="/event/:eventId/edit" exact component={EventForm} authed={authed} />
+        <Footer/>
         </Switch>
       </Router>
     </div>

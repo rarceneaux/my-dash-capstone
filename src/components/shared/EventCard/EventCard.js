@@ -26,10 +26,10 @@ class EventCard extends React.Component {
     // const TimeStamp = moment().format('MMMM Do YYYY, h:mm:ss a');
     return (
       <div className="EventCard">
-  <img src={event.imgUrl} className="rounded-circle bs" alt="..."/>
+  <img src={event.imgUrl} className="event-pic" alt="..."/>
   <div className="card-body">
   <h5 className="card-title">Dash Title: {event.title}</h5>
-  <h5 className="text-center">DashSummary:</h5>
+  <h5 className="text-center">Dash Summary:</h5>
   <p className="card-text">{event.summary}</p>
   {/* <p>Event Posted: { TimeStamp}</p> */}
   <footer className="footer">

@@ -22,14 +22,14 @@ img{
   width:300px;
 }
 
-.bs{
-  margin:15px;
-  border: solid white thick;
-}
+// .bs{
+//   margin:15px;
+//   border: solid white thick;
+// }
 
-.footer{
-  background-color: lightgray;
-}
+// .footer{
+//   background-color: lightgray;
+// }
 
 // .rt-arrow {
 //   // left: auto;
@@ -39,3 +39,11 @@ img{
 //   margin:-20px;
 //   color: lightgray;
 // }
+
+.event-pic{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid white thick;
+  margin-top: 15px;
+}
