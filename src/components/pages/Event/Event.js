@@ -38,8 +38,11 @@ class Event extends React.Component {
     const { bibles } = this.props;
     return (
       <div className="Event">
-        {bibles}
+        {/* if ( events % 2) */}
       {this.state.events.map((event) => <EventCard key={event.id} event={event} bibles={this.state.bibles} deleteAEvent={this.deleteAEvent}/>)}
+        {/* <div className="odd"></div> */}
+        {/* {bibles} */}
+        {/* <div className="even"></div> */}
    </div>
     );
   }

@@ -73,34 +73,34 @@ render() {
       <div className="EventForm">
          <form className="event-details">
        <div className="form-group">
-         <label htmlFor="event-title">Event Title</label>
+         <label htmlFor="event-title">Dash Title</label>
          <input
          type="text"
          className="form-control"
          id="event-title"
-         placeholder="Event Title"
+         placeholder="Dash Title"
          value={title}
          onChange={this.titleChange}
          />
        </div>
        <div className="form-group">
-         <label htmlFor="event-summary">Event Summary</label>
+         <label htmlFor="event-summary">Dash Summary</label>
          <input
          type="text"
          className="form-control"
          id="event-summary"
-         placeholder="Enter Event Summary"
+         placeholder="Dash Summary"
          value={summary}
          onChange={this.summaryChange}
          />
        </div>
        <div className="form-group">
-         <label htmlFor="event-image">Event Photo</label>
+         <label htmlFor="event-image">Dash Photo</label>
          <input
          type="text"
          className="form-control"
          id="event-image"
-         placeholder="Add Event Photo"
+         placeholder="Add Dash Photo"
          value={imgUrl}
          onChange={this.eventImgUrlChange}
          />

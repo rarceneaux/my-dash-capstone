@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import firebase from 'firebase/app';
 import 'firebase/auth';
 
-import './NavBar.scss';
+import './Navbar.scss';
 
 class NavBar extends React.Component {
   static propTypes = {
@@ -22,9 +22,9 @@ render() {
     if (authed) {
       return (
     <ul className="navbar-nav ml-auto">
-    <li className="nav-item"><Link className="nav-link" to="/"><img src={userObj.photoURL} className="icon rounded-circle" alt="..."/> {userObj.displayName}</Link></li>
-    <li className="nav-item"><Link className="nav-link" to="/event">Events</Link></li>
-    <li className="nav-item"><Link className="nav-link" to="/event/new">Add New Event</Link></li>
+    <li className="nav-item"><span><Link className="nav-link" to="/"><img src={userObj.photoURL} className="icon rounded-circle" alt="..."/>  {userObj.displayName}</Link></span></li>
+    <li className="nav-item"><Link className="nav-link" to="/event">Dash</Link></li>
+    <li className="nav-item"><Link className="nav-link" to="/event/new">Add New Dash</Link></li>
     <li className="nav-item"><p className="nav-link" onClick={this.logMeOut}>Logout</p></li>
    </ul>
       );
@@ -34,8 +34,8 @@ render() {
   };
 
   return (
-  <div className="Navbar">
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div className="NavBar">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark change">
       <Link className="navbar-brand" to="/">My-Dash</Link>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>

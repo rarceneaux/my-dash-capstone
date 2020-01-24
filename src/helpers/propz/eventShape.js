@@ -6,7 +6,6 @@ const eventShape = PropTypes.shape({
   title: PropTypes.string.isRequired,
   summary: PropTypes.string.isRequired,
   imgUrl: PropTypes.string.isRequired,
-  posted: PropTypes.string,
 });
 
 export default { eventShape };
