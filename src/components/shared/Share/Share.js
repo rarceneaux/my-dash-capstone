@@ -1,19 +1,23 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import PropTypes from 'prop-types';
 import {
-  faFacebook,
-} from '@fortawesome/free-brands-svg-icons';
-
-import {
-  FacebookShareButton, FacebookIcon,
+  FacebookIcon,
 } from 'react-share';
+import eventShape from '../../../helpers/propz/eventShape';
 
+import './Share.scss';
 
 class Share extends React.Component {
+  static propTypes = {
+    event: eventShape.eventShape,
+  }
+
   render() {
     return (
-    <div className="fb-share-button" data-href="https://my-dash-93e26.firebaseapp.com/" data-layout="button" data-size="large"><a target="_" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmy-dash-93e26.firebaseapp.com%2F&amp;src=sdkpreparse">Share Dash</a>
-    </div>
+      <div className="fb-share-button" data-href="https://my-dash-93e26.firebaseapp.com/" data-layout="button" data-size="large">
+  <p className="share">Share On:</p>
+      <a target="_" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmy-dash-93e26.firebaseapp.com%2F&amp;src=sdkpreparse"><FacebookIcon className="fb"/></a>
+      </div>
     );
   }
 }
