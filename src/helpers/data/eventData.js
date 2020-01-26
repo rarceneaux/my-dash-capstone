@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import axios from 'axios';
 import apiKeys from '../apiKeys.json';
 
@@ -32,9 +33,9 @@ const deleteAEvent = (eventId) => axios.delete(`${baseUrl}/events/${eventId}.jso
 const updateAEvent = (eventId, newEventInfo) => axios.put(`${baseUrl}/events/${eventId}.json`, newEventInfo);
 
 const { key } = apiKeys.bibleRequest;
-const bibleBaseUrl = 'https://api.scripture.api.bible/v1/bibles/de4e12af7f28f599-01/verses/JHN.3.16';
+const bibleBaseUrl = 'https://api.scripture.api.bible/v1/bibles/de4e12af7f28f599-01/verses/JHN.3.16-JHN.4.1?content-type=text&include-notes=false&include-titles=false&include-chapter-numbers=false&include-verse-numbers=false&include-verse-spans=false&use-org-id=false';
 
-const getBibles = () => new Promise((resolve, reject) => {
+const getVerses = () => new Promise((resolve, reject) => {
   axios
     .get(`${bibleBaseUrl}`, {
       headers: {
@@ -43,7 +44,7 @@ const getBibles = () => new Promise((resolve, reject) => {
     })
     .then((results) => {
       resolve(results.data);
-      console.log(results.data);
+      // console.log(results.data.data);
     })
     .catch((error) => reject(error));
 });
@@ -54,5 +55,5 @@ export default {
   addNewEvent,
   deleteAEvent,
   updateAEvent,
-  getBibles,
+  getVerses,
 };

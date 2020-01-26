@@ -8,7 +8,7 @@ import './Event.scss';
 class Event extends React.Component {
   state = {
     events: [],
-    bibles: [],
+    verses: [],
   }
 
   getEvents = () => {
@@ -18,8 +18,8 @@ class Event extends React.Component {
   }
 
   getBiblesInfo = () => {
-    eventData.getBibles()
-      .then((bibles) => this.setState({ bibles }))
+    eventData.getVerses()
+      .then((verses) => this.setState({ verses }))
       .catch((err) => console.error('error from bibles', err));
   }
 
@@ -35,11 +35,11 @@ class Event extends React.Component {
   }
 
   render() {
-    const { bibles } = this.props;
+    const { verses } = this.props;
     return (
       <div className="Event">
         {/* if ( events % 2) */}
-      {this.state.events.map((event) => <EventCard key={event.id} event={event} bibles={this.state.bibles} deleteAEvent={this.deleteAEvent}/>)}
+      {this.state.events.map((event) => <EventCard key={event.id} event={event} verses={this.state.verses} deleteAEvent={this.deleteAEvent}/>)}
         {/* <div className="odd"></div> */}
         {/* {bibles} */}
         {/* <div className="even"></div> */}
