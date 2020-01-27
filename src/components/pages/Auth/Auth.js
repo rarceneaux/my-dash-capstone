@@ -15,6 +15,7 @@ class Auth extends React.Component {
       return (
       <div className="Auth my-5">
         <div className="d-flex justify-content-center mt-r test">
+        {/* <img className="log" src="https://reactnativestarter-hosting-mobilehub-132039435.s3.amazonaws.com/my-dash.lfe(FACEBOOK).png" className="rounded-circle pic" alt="..."/> */}
         <button className="btn btn-secondary" onClick={this.loginClickEvent}>Sign in with Google</button>
       </div>
       </div>

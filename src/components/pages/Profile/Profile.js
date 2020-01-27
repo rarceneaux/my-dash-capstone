@@ -7,8 +7,8 @@ class Profile extends React.Component {
   render() {
     const { userObj } = this.props;
     return (
-      <div className="Profile">
-        <div className="card profile-all">
+      <div className="me">
+        <div className="profile-all">
         <div className="what">
   <h5 className="card-title ray">Welcome, { userObj.displayName} to your My-Dash Journal!</h5>
   <img src={userObj.photoURL} className="rounded-circle pic" alt="..."/>
