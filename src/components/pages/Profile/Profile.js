@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import FontAwesome from 'react-fontawesome';
 import './Profile.scss';
 
 class Profile extends React.Component {
@@ -13,7 +12,7 @@ class Profile extends React.Component {
   <h2 className="card-title ray">Welcome, { userObj.displayName} to your My-Dash Journal!</h2>
   <img src={userObj.photoURL} className="rounded-circle pic" alt="..."/>
   <div className="card-body">
-    <p className="login-time">You Last Login: {userObj.metadata.lastSignInTime}</p>
+    <h5 className="login-time">You Last Login: {userObj.metadata.lastSignInTime}</h5>
   <Link className="btn btn-dark create" to={'/event/new'}>Add-Dash</Link>
   <Link className="btn btn-dark view" to={'/event'}>View-Dash</Link>
   <Link className="btn btn-dark view" to={'/friends'}>Friends</Link>
