@@ -7,26 +7,26 @@
   },
   "event2": {
     "title": "Life After Death",
-    "summary": "At the age of 9, I lost my maternal grandmother to colon cancer.",
+    "summary": "At the age of 9, I lost my maternal grandmother to cancer.",
     "imgUrl": "https://reactnativestarter-hosting-mobilehub-132039435.s3.amazonaws.com/graveyard.JPG",
     "uid": "7cWpK0AfFMS7WvawgdjcEqAayZK2"
   },
   "event3": {
     "title": "Riverbend",
-    "summary": "When I was 10, My mother married a man in prison. His presence in my life did not show it's value until many years later.",
+    "summary": "When I was 10, My mother married a man in prison for murder.",
     "imgUrl": "https://reactnativestarter-hosting-mobilehub-132039435.s3.amazonaws.com/Popps.png",
     "uid": "7cWpK0AfFMS7WvawgdjcEqAayZK2"
   },
   "event4": {
     "title": "QB₁",
-    "summary": "In high school in my sophomore year, I became the starting QB to the varsity football team.",
+    "summary": "In high school I was the starting QB on the varsity team.",
     "imgUrl": "https://reactnativestarter-hosting-mobilehub-132039435.s3.amazonaws.com/QB1.jpg",
     "uid": "7cWpK0AfFMS7WvawgdjcEqAayZK2"
   },
   "event5": {
     "title": "Blind Spots",
-    "summary": "As the years passed from ages 30-39 a lot of events from the past came to the light.",
-    "imgUrl": "https://reactnativestarter-hosting-mobilehub-132039435.s3.amazonaws.com/Blind+Spots.png",
+    "summary": "A story about Death and how it shapes Life",
+    "imgUrl": "https://reactnativestarter-hosting-mobilehub-132039435.s3.amazonaws.com/BlindSpots+(2).JPG",
     "uid": "7cWpK0AfFMS7WvawgdjcEqAayZK2"
   },
   "event6": {
@@ -36,8 +36,8 @@
     "uid": "7cWpK0AfFMS7WvawgdjcEqAayZK2"
   },
   "event7": {
-    "title": "Dev Life",
-    "summary": "Life at NSS has been a journey and the best is yet to come.",
+    "title": "Nashville Software School",
+    "summary": "Life at NSS has been a great experience.",
     "imgUrl": "https://reactnativestarter-hosting-mobilehub-132039435.s3.amazonaws.com/TLH.png",
     "uid": "7cWpK0AfFMS7WvawgdjcEqAayZK2"
   }

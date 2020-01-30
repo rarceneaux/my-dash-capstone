@@ -1,0 +1,26 @@
+{
+  "share1": {
+    "eventId": "event1",
+    "friendId": "friend2"
+  },
+  "share2": {
+    "eventId": "event2",
+    "friendId": "friend3"
+  },
+  "share3": {
+    "eventId": "event3",
+    "friendId": "friend3"
+  },
+    "share4": {
+      "eventId": "event4",
+      "friendId": "friend2"
+    },
+    "share5": {
+      "eventId": "event5",
+      "friendId": "friend2"
+    },
+    "share6": {
+      "eventId": "event6",
+      "friendId": "friend3"
+    }
+}

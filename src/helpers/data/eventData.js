@@ -33,7 +33,7 @@ const deleteAEvent = (eventId) => axios.delete(`${baseUrl}/events/${eventId}.jso
 const updateAEvent = (eventId, newEventInfo) => axios.put(`${baseUrl}/events/${eventId}.json`, newEventInfo);
 
 const { key } = apiKeys.bibleRequest;
-const bibleBaseUrl = 'https://api.scripture.api.bible/v1/bibles/de4e12af7f28f599-01/verses/JHN.3.16-JHN.4.1?content-type=text&include-notes=false&include-titles=false&include-chapter-numbers=false&include-verse-numbers=false&include-verse-spans=false&use-org-id=false';
+const bibleBaseUrl = 'https://api.scripture.api.bible/v1/bibles/de4e12af7f28f599-01/verses/JHN.3.1-JHN.4.1?content-type=json';
 
 const getVerses = () => new Promise((resolve, reject) => {
   axios
@@ -43,8 +43,8 @@ const getVerses = () => new Promise((resolve, reject) => {
       },
     })
     .then((results) => {
+      console.log(results.data.data.content);
       resolve(results.data);
-      // console.log(results.data.data);
     })
     .catch((error) => reject(error));
 });

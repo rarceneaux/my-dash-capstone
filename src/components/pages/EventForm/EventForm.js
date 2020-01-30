@@ -106,8 +106,8 @@ render() {
          />
        </div>
        { eventId
-         ? <button className="btn btn-secondary" onClick={this.editEventAEvent}>Save Dash</button>
-         : <button className="btn btn-secondary" onClick={this.saveEventAEvent}>Save Dash</button>
+         ? <button className="btn btn-dark dash" onClick={this.editEventAEvent}>Save Dash</button>
+         : <button className="btn btn-dark dash" onClick={this.saveEventAEvent}>Save Dash</button>
        }
       </form>
       </div>

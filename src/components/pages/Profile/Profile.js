@@ -10,12 +10,14 @@ class Profile extends React.Component {
       <div className="me">
         <div className="profile-all">
         <div className="what">
-  <h5 className="card-title ray">Welcome, { userObj.displayName} to your My-Dash Journal!</h5>
+  <h2 className="card-title ray">Welcome, { userObj.displayName} to your My-Dash Journal!</h2>
   <img src={userObj.photoURL} className="rounded-circle pic" alt="..."/>
   <div className="card-body">
-    <p>You Last Login: {userObj.metadata.lastSignInTime}</p>
-  <Link className="btn btn-secondary create" to={'/event/new'}>Add to Your Dash</Link>
-  <Link className="btn btn-secondary view" to={'/event'}>View Your Dash</Link>
+    <p className="login-time">You Last Login: {userObj.metadata.lastSignInTime}</p>
+  <Link className="btn btn-dark create" to={'/event/new'}>Add-Dash</Link>
+  <Link className="btn btn-dark view" to={'/event'}>View-Dash</Link>
+  <Link className="btn btn-dark view" to={'/friends'}>Friends</Link>
+  <div className="fb-comments" data-href="https://my-dash-93e26.firebaseapp.com/" data-width="500" data-numposts="100"></div>
   </div>
 </div>
   </div>
