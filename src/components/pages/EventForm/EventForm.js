@@ -20,13 +20,9 @@ class EventForm extends React.Component {
     title: '',
     summary: '',
     imgUrl: '',
+    isUploading: false,
+    progress: 0,
   }
-
-  // formFieldStringState = (name, e) => {
-  //   const tempEvent = { ...this.state.newE };
-  //   tempEvent[name] = e.target.value;
-  //   this.setState({ newE: tempEvent });
-  // }
 
   componentDidMount() {
     const { eventId } = this.props.match.params;
@@ -71,6 +67,7 @@ saveEventAEvent = (e) => {
 
 editEventAEvent = (e) => {
   const { eventId } = this.props.match.params;
+  const { isUploading } = this.state;
   e.preventDefault();
   const newEvent = {
     title: this.state.title,
@@ -83,20 +80,29 @@ editEventAEvent = (e) => {
     .catch((err) => console.error('err', err));
 }
 
+handleUploadStart =() => this.setState({ isUploading: true, progress: 0 });
+
+
 handleUploadSuccess = (filename) => {
   this.setState({
     image: filename,
+    isUploading: false,
+    progress: 100,
   });
   firebase.storage().ref('images').child(filename).getDownloadURL()
     .then((url) => {
       this.setState({ imgUrl: url });
-      this.props.imgUrl(url);
+      // this.props.imgUrl(url);
     })
     .catch((err) => console.error('no image url', err));
 };
 
 render() {
-  const { title, summary, imgUrl } = this.state;
+  const {
+    title,
+    summary,
+    isUploading,
+  } = this.state;
   const { eventId } = this.props.match.params;
   return (
       <div className="EventForm">
@@ -130,12 +136,13 @@ render() {
          name="image"
          id="imgUrl"
          storageRef={firebase.storage().ref('images/')}
+         onUploadStart ={this.handleUploadStart}
          onUploadSuccess={this.handleUploadSuccess}
          />
        </div>
        { eventId
-         ? <button className="btn btn-dark dash" onClick={this.editEventAEvent}>Save Dash</button>
-         : <button className="btn btn-dark dash" onClick={this.saveEventAEvent}>Save Dash</button>
+         ? <button className="btn btn-dark dash" disabled={isUploading} onClick={this.editEventAEvent}>Save Dash</button>
+         : <button className="btn btn-dark dash" disabled={isUploading} onClick={this.saveEventAEvent}>Save Dash</button>
        }
       </form>
       </div>

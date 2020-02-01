@@ -2,8 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Share from '../Share/Share';
-// import Friends from '../../pages/Friends/Friends';
-
 
 import './EventCard.scss';
 
