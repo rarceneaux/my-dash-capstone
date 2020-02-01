@@ -9,12 +9,24 @@ import 'firebase/storage';
 
 import './EventForm.scss';
 
+// const defaultEvent = {
+//   title: '',
+//   summary: '',
+//   imgUrl: '',
+// };
+
 class EventForm extends React.Component {
   state = {
     title: '',
     summary: '',
     imgUrl: '',
   }
+
+  // formFieldStringState = (name, e) => {
+  //   const tempEvent = { ...this.state.newE };
+  //   tempEvent[name] = e.target.value;
+  //   this.setState({ newE: tempEvent });
+  // }
 
   componentDidMount() {
     const { eventId } = this.props.match.params;
@@ -23,7 +35,7 @@ class EventForm extends React.Component {
         .then((response) => {
           const event = response.data;
           this.setState({ title: event.title, summary: event.summary, imgUrl: event.imgUrl });
-          // console.log(this.state);
+          console.log(this.state);
         })
         .catch((err) => console.error('err', err));
     }
@@ -73,7 +85,7 @@ editEventAEvent = (e) => {
 
 handleUploadSuccess = (filename) => {
   this.setState({
-    imgUrl: filename,
+    image: filename,
   });
   firebase.storage().ref('images').child(filename).getDownloadURL()
     .then((url) => {
@@ -117,7 +129,6 @@ render() {
          accept="image/*"
          name="image"
          id="imgUrl"
-         value={''}
          storageRef={firebase.storage().ref('images/')}
          onUploadSuccess={this.handleUploadSuccess}
          />
