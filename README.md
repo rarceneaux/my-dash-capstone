@@ -97,13 +97,13 @@ Once you login with your google email account:
 LOGIN
 ![](src/assets/Login .png)
 GMAIL POPUP
-!(src/assets/Gmail .png)
+![](src/assets/Gmail .png)
 HOME PAGE
 ![](src/assets/Home.png)
 READ
 ![](src/assets/Read Events.png)
 ADD NEW EVENT FORM
-!(src/assets/Add Event Form.png)
+![](src/assets/Add Event Form.png)
 EDIT EVENT FORM
 ![](src/assets/Edit Event.png)
 FACEBOOK SHARE 
