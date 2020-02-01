@@ -91,29 +91,29 @@ Once you login with your google email account:
 - User can create an event entry with a title, summary, and entry photo
 - User can edit an existing entry by changing one or all fields (title, summary, photo)
 - User can delete an event entry entirely from their journal
-- User can share My-Dash App on Facebook
+- User can Share My-Dash App on Facebook
 
 # My-Dash Screenshot
-LOGIN
-![](src/assets/Login.png)
+## HOME LOGIN
+![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/Login.png)
 
-GMAIL POPUP
-![](src/assets/Gmail.png)
+## GMAIL POPUP
+![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/Gmail.png)
 
-HOME PAGE
-![](src/assets/Home.png)
+## USER PROFILE PAGE
+![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/Home.png)
 
-READ
-![](src/assets/ReadEvents.png)
+## READ My-Dash Events
+![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/ReadEvents.png)
 
-ADD NEW EVENT FORM
-![](src/assets/AddEventForm.png)
+## ADD NEW My-Dash Events FORM
+![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/AddEventForm.png)
 
-EDIT EVENT FORM
-![](src/assets/EditEvent.png)
+## EDIT My-Dash Events FORM
+![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/EditEvent.png)
 
-FACEBOOK SHARE 
-![](src/assets/FacebookShare.png)
+## FACEBOOK SHARE My-Dash
+![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/FacebookShare.png)
 
 # VISIT My-Dash ONLINE:
 my-dash-93e26.firebaseapp.com
