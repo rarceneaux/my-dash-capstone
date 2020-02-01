@@ -15,7 +15,6 @@ class Profile extends React.Component {
     <h5 className="login-time">You Last Login: {userObj.metadata.lastSignInTime}</h5>
   <Link className="btn btn-dark create" to={'/event/new'}>Add-Dash</Link>
   <Link className="btn btn-dark view" to={'/event'}>View-Dash</Link>
-  {/* <div className="fb-comments" data-href="https://my-dash-93e26.firebaseapp.com/" data-width="500" data-numposts="100"></div> */}
   </div>
 </div>
   </div>

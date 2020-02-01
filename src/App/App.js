@@ -10,8 +10,6 @@ import firebaseConnection from '../helpers/data/connections';
 import Profile from '../components/pages/Profile/Profile';
 import Event from '../components/pages/Event/Event';
 import EventForm from '../components/pages/EventForm/EventForm';
-// import Footer from '../components/shared/Footer/Footer';
-
 
 import './App.scss';
 
@@ -35,10 +33,8 @@ class App extends React.Component {
     userObj: '',
   }
 
-  // Console.log user to get info for stretch goal user profile
   componentDidMount() {
     this.removeListener = firebase.auth().onAuthStateChanged((userObj) => {
-      // console.log(userObj);
       if (userObj) {
         this.setState({ authed: true, userObj });
       } else {
@@ -64,7 +60,6 @@ class App extends React.Component {
         <PrivateRoute path="/event/new" exact component={EventForm} authed={authed}/>
         <PrivateRoute path="/event/:eventId/edit" exact component={EventForm} authed={authed} />
         </Switch>
-        {/* <Footer/> */}
       </Router>
     </div>
     );
