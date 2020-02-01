@@ -95,7 +95,7 @@ Once you login with your google email account:
 
 # My-Dash Screenshot
 LOGIN
-![](src/assets/Login .png)
+![](src/assets/Login.png)
 
 GMAIL POPUP
 ![](src/assets/Gmail.png)
