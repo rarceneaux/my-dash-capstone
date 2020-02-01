@@ -69,7 +69,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 # My-Dash
 Application Overview
-My-Dash is a legacy journal based CRUD application that allows users to save their life events. Users can add a new event entry, edit an entry, view all entries, and delete a entry.
+My-Dash is a legacy journal single-page application that allows users to save their life events. Users can add a new event entry, edit an entry, view all entries, and delete a entry.
 
 # Installation Instructions
 - Clone down this repo https://github.com/rarceneaux/my-dash-capstone
@@ -115,5 +115,5 @@ Once you login with your google email account:
 ## FACEBOOK SHARE My-Dash
 ![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/FacebookShare.png)
 
-# VISIT My-Dash ONLINE:
-my-dash-93e26.firebaseapp.com
+# VISIT My-Dash:
+http://my-dash.life
