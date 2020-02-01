@@ -88,11 +88,11 @@ In your terminal, type npm run deploy
 
 # Application Features
 Once you login with your google email account:
-- User can *CREATE* an event entry with a title, summary, and upload an entry photoe
-- User can *READ* all existing event entries
-- User can *UPDATE* an existing entry by changing one or all given entry fields (title, summary, photo)
-- User can *DELETE* an event entry entirely from their journal
-- User can Share My-Dash App on Facebook
+- User can **CREATE** an event entry with a title, summary, and upload an entry photoe
+- User can **READ** all existing event entries
+- User can **UPDATE** an existing entry by changing one or all given entry fields (title, summary, photo)
+- User can **DELETE** an event entry entirely from their journal
+- User can **Share** My-Dash App on Facebook
 
 # My-Dash Screenshot
 ## HOME LOGIN
