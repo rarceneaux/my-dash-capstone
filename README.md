@@ -1,5 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+<!-- 
 ## Available Scripts
 
 In the project directory, you can run:
@@ -65,4 +65,49 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 ### `npm run build` fails to minify
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify -->
+
+# My-Dash
+Application Overview
+My-Dash is a legacy journal based CRUD application that allows users to save their life events. Users can add a new event entry, edit an entry, view all entries, and delete a entry.
+
+# Installation Instructions
+- Clone down this repo https://github.com/rarceneaux/my-dash-capstone
+- At the root of the project, run npm install
+- Create a project in Firebase
+- Add a web app to the project and enable Google authentication
+- Create a real-time database and seed it with the data from the database directory
+- Create a file named /helpers/data/apiKeys.json and add your Firebase keys using the apiKeys.example.json as a template *Make sure your apiKeys are added into your .gitignore file
+
+# How to Run My-Dash
+In your terminal, type npm start
+Note: if you want to make a production build of this project, type npm run build. This will create a folder called build with all the minified code you need.
+
+# How to Deploy My-Dash
+In your terminal, type npm run deploy
+
+# Application Features
+Once you login with your google email account:
+- User can create an event entry with a title, summary, and entry photo
+- User can edit an existing entry by changing one or all fields (title, summary, photo)
+- User can delete an event entry entirely from their journal
+- User can share My-Dash App on Facebook
+
+# My-Dash Screenshot
+LOGIN
+![src/assets/Login .png]()
+GMAIL POPUP
+![src/assets/Gmail .png]()
+HOME PAGE
+![src/assets/Home.png]()
+READ
+![src/assets/Read Events.png]()
+ADD NEW EVENT FORM
+![src/assets/Add Event Form.png]()
+EDIT EVENT FORM
+![src/assets/Edit Event.png]()
+FACEBOOK SHARE 
+![src/assets/Facebook Share.png]()
+
+# WEB ONLINE
+my-dash-93e26.firebaseapp.com
