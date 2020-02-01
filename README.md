@@ -67,9 +67,8 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify -->
 
-# My-Dash
-Application Overview
-My-Dash is a legacy journal single-page application that allows users to save their life events. Users can add a new event entry, edit an entry, view all entries, and delete a entry.
+# My-Dash Application Overview
+My-Dash is a online legacy journal single-page application that allows users to save their life events. Users can add a new event entry, edit an entry, view all entries, and delete an entry.
 
 # Installation Instructions
 - Clone down this repo https://github.com/rarceneaux/my-dash-capstone
@@ -77,7 +76,8 @@ My-Dash is a legacy journal single-page application that allows users to save th
 - Create a project in Firebase
 - Add a web app to the project and enable Google authentication
 - Create a real-time database and seed it with the data from the database directory
-- Create a file named /helpers/data/apiKeys.json and add your Firebase keys using the apiKeys.example.json as a template *Make sure your apiKeys are added into your .gitignore file
+- Create a file named /helpers/data/apiKeys.json and add your Firebase keys using the apiKeys.example.json as a template 
+     *Make sure apiKeys are added into the .gitignore file
 
 # How to Run My-Dash
 In your terminal, type npm start
@@ -88,9 +88,10 @@ In your terminal, type npm run deploy
 
 # Application Features
 Once you login with your google email account:
-- User can create an event entry with a title, summary, and entry photo
-- User can edit an existing entry by changing one or all fields (title, summary, photo)
-- User can delete an event entry entirely from their journal
+- User can *CREATE* an event entry with a title, summary, and upload an entry photoe
+- User can *READ* all existing event entries
+- User can *UPDATE* an existing entry by changing one or all given entry fields (title, summary, photo)
+- User can *DELETE* an event entry entirely from their journal
 - User can Share My-Dash App on Facebook
 
 # My-Dash Screenshot
