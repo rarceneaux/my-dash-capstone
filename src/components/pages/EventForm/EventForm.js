@@ -6,14 +6,7 @@ import authData from '../../../helpers/data/authData';
 import eventData from '../../../helpers/data/eventData';
 import 'firebase/storage';
 
-
 import './EventForm.scss';
-
-// const defaultEvent = {
-//   title: '',
-//   summary: '',
-//   imgUrl: '',
-// };
 
 class EventForm extends React.Component {
   state = {
@@ -31,7 +24,6 @@ class EventForm extends React.Component {
         .then((response) => {
           const event = response.data;
           this.setState({ title: event.title, summary: event.summary, imgUrl: event.imgUrl });
-          console.log(this.state);
         })
         .catch((err) => console.error('err', err));
     }
