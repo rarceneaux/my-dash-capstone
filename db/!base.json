@@ -1,6 +1,3 @@
 {
-  "events": "events",
-  "friends": "friends",
-  "shares": "shares",
-  "users": "users"
+  "events": "events"
 }

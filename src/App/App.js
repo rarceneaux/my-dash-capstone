@@ -10,7 +10,6 @@ import firebaseConnection from '../helpers/data/connections';
 import Profile from '../components/pages/Profile/Profile';
 import Event from '../components/pages/Event/Event';
 import EventForm from '../components/pages/EventForm/EventForm';
-import Friends from '../components/pages/Friends/Friends';
 // import Footer from '../components/shared/Footer/Footer';
 
 
@@ -64,8 +63,8 @@ class App extends React.Component {
         <PrivateRoute path="/event" exact component={Event} authed={authed}/>
         <PrivateRoute path="/event/new" exact component={EventForm} authed={authed}/>
         <PrivateRoute path="/event/:eventId/edit" exact component={EventForm} authed={authed} />
-        <PrivateRoute path="/friends" exact component={Friends} authed={authed}/>
         </Switch>
+        {/* <Footer/> */}
       </Router>
     </div>
     );

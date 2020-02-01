@@ -8,7 +8,7 @@ const getEventsByUid = (uid) => new Promise((resolve, reject) => {
   axios.get(`${baseUrl}/events.json?orderBy="uid"&equalTo="${uid}"`)
     .then((result) => {
       const allEventsObj = result.data;
-      console.log(result.data);
+      // console.log(result.data);
       const events = [];
       if (allEventsObj != null) {
         Object.keys(allEventsObj).forEach((itemId) => {
@@ -32,28 +32,10 @@ const deleteAEvent = (eventId) => axios.delete(`${baseUrl}/events/${eventId}.jso
 
 const updateAEvent = (eventId, newEventInfo) => axios.put(`${baseUrl}/events/${eventId}.json`, newEventInfo);
 
-const { key } = apiKeys.bibleRequest;
-const bibleBaseUrl = 'https://api.scripture.api.bible/v1/bibles/de4e12af7f28f599-01/verses/JHN.3.1-JHN.4.1?content-type=json';
-
-const getVerses = () => new Promise((resolve, reject) => {
-  axios
-    .get(`${bibleBaseUrl}`, {
-      headers: {
-        'api-key': key,
-      },
-    })
-    .then((results) => {
-      console.log(results.data.data.content);
-      resolve(results.data);
-    })
-    .catch((error) => reject(error));
-});
-
 export default {
   getEventsByUid,
   getSingleEvent,
   addNewEvent,
   deleteAEvent,
   updateAEvent,
-  getVerses,
 };
