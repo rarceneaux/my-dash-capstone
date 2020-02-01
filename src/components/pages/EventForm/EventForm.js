@@ -53,6 +53,7 @@ eventImgUrlChange = (e) => {
 }
 
 saveEventAEvent = (e) => {
+  const { isUploading } = this.state;
   e.preventDefault();
   const newEvent = {
     title: this.state.title,
