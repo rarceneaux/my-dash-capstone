@@ -115,5 +115,5 @@ EDIT EVENT FORM
 FACEBOOK SHARE 
 ![](src/assets/FacebookShare.png)
 
-# VISIT ONLINE:
+# VISIT MY-Dash ONLINE:
 my-dash-93e26.firebaseapp.com
