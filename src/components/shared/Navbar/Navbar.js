@@ -22,9 +22,10 @@ render() {
     if (authed) {
       return (
     <ul className="navbar-nav ml-auto">
-    <li className="nav-item"><span><Link className="nav-link" to="/"><img src={userObj.photoURL} className="icon rounded-circle" alt="..."/>  {userObj.displayName}</Link></span></li>
+    <li className="nav-item"><span><Link className="nav-link" to="/"><img src={userObj.photoURL} className="icon rounded-circle" alt="..."/> Home</Link></span></li>
     <li className="nav-item"><Link className="nav-link" to="/event">Dash</Link></li>
-    <li className="nav-item"><Link className="nav-link" to="/event/new">Add New Dash</Link></li>
+    <li className="nav-item"><Link className="nav-link" to="/event/new">Add New -</Link></li>
+    <li className="nav-item"><Link className="nav-link" to="/friends">Friends</Link></li>
     <li className="nav-item"><p className="nav-link" onClick={this.logMeOut}>Logout</p></li>
    </ul>
       );

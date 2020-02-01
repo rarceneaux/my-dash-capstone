@@ -1,7 +1,6 @@
 .pic{
   height: 300px;
   width:300px;
-  margin: 15px;
 }
   
 .view{
@@ -9,11 +8,18 @@
 }
 
 .what{
-  background-color: rgba(231, 235, 240, 0.966);
+  // // background-color: rgba(231, 235, 240, 0.966);
+  // background-color: rgba(196, 151, 126, 1);
   margin: 50px;
-  border: solid black 5px;
+  // border: solid black 5px;
 }
 
-.ray{
+.ray, .login-time{
   margin: 15px;
+  color:black;
+}
+
+.fb-comments{
+  background-color: #e9ebee;
+  border-radius: 25px;
 }

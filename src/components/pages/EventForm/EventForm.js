@@ -1,8 +1,19 @@
 import React from 'react';
+import firebase from 'firebase/app';
+import 'firebase/auth';
+import FileUploader from 'react-firebase-file-uploader';
 import authData from '../../../helpers/data/authData';
 import eventData from '../../../helpers/data/eventData';
+import 'firebase/storage';
+
 
 import './EventForm.scss';
+
+// const defaultEvent = {
+//   title: '',
+//   summary: '',
+//   imgUrl: '',
+// };
 
 class EventForm extends React.Component {
   state = {
@@ -10,6 +21,12 @@ class EventForm extends React.Component {
     summary: '',
     imgUrl: '',
   }
+
+  // formFieldStringState = (name, e) => {
+  //   const tempEvent = { ...this.state.newE };
+  //   tempEvent[name] = e.target.value;
+  //   this.setState({ newE: tempEvent });
+  // }
 
   componentDidMount() {
     const { eventId } = this.props.match.params;
@@ -66,6 +83,18 @@ editEventAEvent = (e) => {
     .catch((err) => console.error('err', err));
 }
 
+handleUploadSuccess = (filename) => {
+  this.setState({
+    image: filename,
+  });
+  firebase.storage().ref('images').child(filename).getDownloadURL()
+    .then((url) => {
+      this.setState({ imgUrl: url });
+      this.props.imgUrl(url);
+    })
+    .catch((err) => console.error('no image url', err));
+};
+
 render() {
   const { title, summary, imgUrl } = this.state;
   const { eventId } = this.props.match.params;
@@ -95,19 +124,18 @@ render() {
          />
        </div>
        <div className="form-group">
-         <label htmlFor="event-image">Dash Photo</label>
-         <input
-         type="text"
-         className="form-control"
-         id="event-image"
-         placeholder="Add Dash Photo"
-         value={imgUrl}
-         onChange={this.eventImgUrlChange}
+         <label htmlFor="event-image"> Upload Photo</label>
+         <FileUploader
+         accept="image/*"
+         name="image"
+         id="imgUrl"
+         storageRef={firebase.storage().ref('images/')}
+         onUploadSuccess={this.handleUploadSuccess}
          />
        </div>
        { eventId
-         ? <button className="btn btn-secondary" onClick={this.editEventAEvent}>Save Dash</button>
-         : <button className="btn btn-secondary" onClick={this.saveEventAEvent}>Save Dash</button>
+         ? <button className="btn btn-dark dash" onClick={this.editEventAEvent}>Save Dash</button>
+         : <button className="btn btn-dark dash" onClick={this.saveEventAEvent}>Save Dash</button>
        }
       </form>
       </div>
