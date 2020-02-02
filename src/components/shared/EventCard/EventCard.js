@@ -31,6 +31,7 @@ class EventCard extends React.Component {
   <Link className="btn btn-dark edit" to={`/event/${event.id}/edit`}>Edit Dash</Link>
   <button className="btn btn-dark delete" onClick={this.deleteEventEvent}>Delete Dash</button>
   <Share/>
+  <div className="fb-like" data-href="https://my-dash-93e26.firebaseapp.com/" data-width="50" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
     </div>
     </div>
     );
