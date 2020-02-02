@@ -10,6 +10,8 @@ import firebaseConnection from '../helpers/data/connections';
 import Profile from '../components/pages/Profile/Profile';
 import Event from '../components/pages/Event/Event';
 import EventForm from '../components/pages/EventForm/EventForm';
+import Comments from '../components/pages/Comments/Comments';
+
 
 import './App.scss';
 
@@ -59,6 +61,8 @@ class App extends React.Component {
         <PrivateRoute path="/event" exact component={Event} authed={authed}/>
         <PrivateRoute path="/event/new" exact component={EventForm} authed={authed}/>
         <PrivateRoute path="/event/:eventId/edit" exact component={EventForm} authed={authed} />
+        <PrivateRoute path="/comments" exact component={Comments} authed={authed} />
+
         </Switch>
       </Router>
     </div>

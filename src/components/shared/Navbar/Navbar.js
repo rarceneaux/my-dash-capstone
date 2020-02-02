@@ -26,6 +26,7 @@ render() {
     <li className="nav-item"><span><Link className="nav-link" to="/"><img src={userObj.photoURL} className="icon rounded-circle" alt="..."/> {userObj.displayName}</Link></span></li>
     <li className="nav-item"><Link className="nav-link" to="/event">Dash</Link></li>
     <li className="nav-item"><Link className="nav-link" to="/event/new">Add Dash</Link></li>
+    <li className="nav-item"><Link className="nav-link" to="/comments">Facebook</Link></li>
     <li className="nav-item"><p className="nav-link" onClick={this.logMeOut}>Logout</p></li>
    </ul>
       );

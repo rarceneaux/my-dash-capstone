@@ -68,7 +68,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify -->
 
 # My-Dash Application Overview
-My-Dash is a online legacy journal single-page application that allows users to save their life events. Users can add a new event entry, edit an entry, view all entries, and delete an entry.
+My-Dash is a online legacy journal single-page application that allows users to save their life events. Users can add a new event entry, edit an entry, view all entries, and delete an entry. Users can create, edit, delete comments with the My-Dash app and post them to Facebook with a photo to share with anyone on Facebook.
 
 # Installation Instructions
 - Clone down this repo https://github.com/rarceneaux/my-dash-capstone
@@ -92,6 +92,7 @@ Once you login with your google email account:
 - User can **READ** all existing event entries
 - User can **UPDATE** an existing entry by changing one or all given entry fields (title, summary, photo)
 - User can **DELETE** an event entry entirely from their journal
+- Users can **Comment** within the My-Dash App and post them to Facebook with a photo.
 - User can **Share** My-Dash App on Facebook
 
 # My-Dash Screenshot
@@ -102,7 +103,7 @@ Once you login with your google email account:
 ![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/Gmail.png)
 
 ## USER PROFILE PAGE
-![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/Home.png)
+![](src/assets/Home.png)
 
 ## READ My-Dash Events
 ![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/ReadEvents.png)
@@ -112,6 +113,21 @@ Once you login with your google email account:
 
 ## EDIT My-Dash Events FORM
 ![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/EditEvent.png)
+
+## FACEBOOK COMMENTS My-Dash CREATE
+![](src/assets/CommentCreate.png)
+
+## FACEBOOK COMMENTS My-Dash Post
+![](src/assets/CommentDone.png)
+
+## FACEBOOK COMMENTS My-Dash Confirm Post to Facebook
+![](src/assets/My-DashConfirm.png)
+
+## FACEBOOK COMMENTS Facebook Confirm Post 
+![](src/assets/FacebookCommentFacebook.png)
+
+## FACEBOOK COMMENTS Posted on Facebook Profile
+![](src/assets/Post.png)
 
 ## FACEBOOK SHARE My-Dash
 ![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/FacebookShare.png)
