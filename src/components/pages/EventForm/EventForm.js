@@ -85,7 +85,6 @@ handleUploadSuccess = (filename) => {
   firebase.storage().ref('images').child(filename).getDownloadURL()
     .then((url) => {
       this.setState({ imgUrl: url });
-      // this.props.imgUrl(url);
     })
     .catch((err) => console.error('no image url', err));
 };
