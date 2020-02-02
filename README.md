@@ -92,8 +92,8 @@ Once you login with your google email account:
 - User can **READ** all existing event entries
 - User can **UPDATE** an existing entry by changing one or all given entry fields (title, summary, photo)
 - User can **DELETE** an event entry entirely from their journal
-- Users can **Comment** within the My-Dash App and post them to Facebook with a photo.
-- User can **Share** My-Dash App on Facebook
+- Users can **COMMENT** within the My-Dash App and post them to Facebook with a photo.
+- User can **SHARE** My-Dash App on Facebook
 
 # My-Dash Screenshot
 ## HOME LOGIN
@@ -103,7 +103,7 @@ Once you login with your google email account:
 ![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/Gmail.png)
 
 ## USER PROFILE PAGE
-![](src/assets/Home.png)
+![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/Home.png)
 
 ## READ My-Dash Events
 ![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/ReadEvents.png)
@@ -115,19 +115,19 @@ Once you login with your google email account:
 ![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/EditEvent.png)
 
 ## FACEBOOK COMMENTS My-Dash CREATE
-![](src/assets/CommentCreate.png)
+![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/CommentCreate.png)
 
 ## FACEBOOK COMMENTS My-Dash Post
-![](src/assets/CommentDone.png)
+![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/Post.png)
 
 ## FACEBOOK COMMENTS My-Dash Confirm Post to Facebook
-![](src/assets/My-DashConfirm.png)
+![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/My-DashConfirm.png)
 
 ## FACEBOOK COMMENTS Facebook Confirm Post 
-![](src/assets/FacebookCommentFacebook.png)
+![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/FacebookCommentFacebook.png)
 
 ## FACEBOOK COMMENTS Posted on Facebook Profile
-![](src/assets/Post.png)
+![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/Post.png)
 
 ## FACEBOOK SHARE My-Dash
 ![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/FacebookShare.png)
