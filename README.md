@@ -118,7 +118,7 @@ Once you login with your google email account:
 ![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/CommentCreate.png)
 
 ## FACEBOOK COMMENTS My-Dash Post
-![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/Post.png)
+![](src/assets/CommentDone.png)
 
 ## FACEBOOK COMMENTS My-Dash Confirm Post to Facebook
 ![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/My-DashConfirm.png)
@@ -132,5 +132,5 @@ Once you login with your google email account:
 ## FACEBOOK SHARE My-Dash
 ![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/FacebookShare.png)
 
-# VISIT My-Dash:
+# VISIT My-Dash at:
 http://my-dash.life
