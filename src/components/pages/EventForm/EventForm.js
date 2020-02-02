@@ -135,8 +135,8 @@ render() {
          />
        </div>
        { eventId
-         ? <button className="btn btn-dark " disabled={isUploading} onClick={this.editEventAEvent}>Save Dash</button>
-         : <button className="btn btn-dark " disabled={isUploading} onClick={this.saveEventAEvent}>Save Dash</button>
+         ? <button className="btn btn-dark" disabled={isUploading} onClick={this.editEventAEvent}>Save Dash</button>
+         : <button className="btn btn-dark" disabled={isUploading} onClick={this.saveEventAEvent}>Save Dash</button>
        }
        <Link className="btn btn-dark cancel" to={'/event'}>Cancel</Link>
       </form>
