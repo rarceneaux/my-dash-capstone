@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import firebase from 'firebase/app';
 import 'firebase/auth';
 import FileUploader from 'react-firebase-file-uploader';
@@ -45,7 +46,7 @@ eventImgUrlChange = (e) => {
 }
 
 saveEventAEvent = (e) => {
-  const { isUploading } = this.state;
+  // const { isUploading } = this.state;
   e.preventDefault();
   const newEvent = {
     title: this.state.title,
@@ -60,7 +61,7 @@ saveEventAEvent = (e) => {
 
 editEventAEvent = (e) => {
   const { eventId } = this.props.match.params;
-  const { isUploading } = this.state;
+  // const { isUploading } = this.state;
   e.preventDefault();
   const newEvent = {
     title: this.state.title,
@@ -134,9 +135,10 @@ render() {
          />
        </div>
        { eventId
-         ? <button className="btn btn-dark " disabled={isUploading} onClick={this.editEventAEvent}>Save Dash</button>
-         : <button className="btn btn-dark " disabled={isUploading} onClick={this.saveEventAEvent}>Save Dash</button>
+         ? <button className="btn btn-dark" disabled={isUploading} onClick={this.editEventAEvent}>Save Dash</button>
+         : <button className="btn btn-dark" disabled={isUploading} onClick={this.saveEventAEvent}>Save Dash</button>
        }
+       <Link className="btn btn-dark cancel" to={'/event'}>Cancel</Link>
       </form>
       </div>
   );
