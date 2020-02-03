@@ -88,6 +88,15 @@ Note: if you want to make a production build of this project, type npm run build
 # How to Deploy My-Dash
 In your terminal, type npm run deploy
 
+# Technologies Used: 
+- React
+- Facebook for Developers
+- JavaScript
+- Bootstrap 4
+- Webpack
+- Firebase
+- AWS S3
+
 # Application Features
 Once you login with your google email account:
 - User can **CREATE** an event entry with a title, summary, and upload an entry photoe
