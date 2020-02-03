@@ -68,7 +68,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify -->
 
 # My-Dash Application Overview
-My-Dash is a online legacy journal single-page application that allows users to save their life events. Users can add a new event entry, edit an entry, view all entries, and delete an entry. Users can create, edit, delete comments with the My-Dash app and post them to Facebook with a photo to share with anyone on Facebook.
+My-Dash is a online legacy journal single-page application that allows users to sign-in with Google. Once a user is logged-in they will have the ability to add a new journal entry, edit an entry, view all entries, and delete an entry. Users can create, edit, and delete comments within the My-Dash app and post them to Facebook with a photo to share with anyone on Facebook.
 
 **Demo My-Dash: www.my-dash.life** 
 
@@ -97,10 +97,13 @@ In your terminal, type npm run deploy
 - CSS/Sass
 - Webpack
 - Firebase
+    - Authentication Google Sign-In
+    - Realtime Database
+    - Storage
 - AWS S3
 
 # Application Features
-Once you login with your google email account:
+- User can **SIGN-IN** with Google 
 - User can **CREATE** an event entry with a title, summary, and upload an entry photoe
 - User can **READ** all existing event entries
 - User can **UPDATE** an existing entry by changing one or all given entry fields (title, summary, photo)
@@ -112,7 +115,7 @@ Once you login with your google email account:
 ## HOME LOGIN
 ![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/Login.png)
 
-## GMAIL POPUP
+## Google Sign-In 
 ![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/Gmail.png)
 
 ## USER PROFILE PAGE
