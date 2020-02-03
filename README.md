@@ -93,6 +93,8 @@ In your terminal, type npm run deploy
 - Facebook for Developers
 - JavaScript
 - Bootstrap 4
+- HTML5
+- CSS/Sass
 - Webpack
 - Firebase
 - AWS S3
@@ -106,7 +108,7 @@ Once you login with your google email account:
 - Users can **COMMENT** within the My-Dash App and post them to Facebook with a photo.
 - User can **SHARE** My-Dash App on Facebook
 
-# My-Dash Screenshot
+# My-Dash Screenshots
 ## HOME LOGIN
 ![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/Login.png)
 
