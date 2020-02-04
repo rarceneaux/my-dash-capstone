@@ -67,10 +67,12 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify -->
 
-# My-Dash Application Overview
-My-Dash is a online legacy journal single-page application that allows users to sign-in with Google. Once a user is logged-in they will have the ability to add a new journal entry, edit an entry, view all entries, and delete an entry. Users can create, edit, and delete comments within the My-Dash app and post them to Facebook with a photo to share with anyone on Facebook.
+# My-Dashbook Application Overview
+My-Dashbook is a online legacy journal single-page application that allows users to sign-in with Google. Once a user is logged-in they will have the ability to add a new journal entry, edit an entry, view all entries, and delete an entry. Users can create, edit, and delete comments within the My-Dashbook app and post them to Facebook with a photo to share with anyone on Facebook.
 
-**Demo My-Dash: www.my-dash.life** 
+Inspired by the poem "This Dash" written by Linda Ellis
+
+**Demo My-Dashbook: www.my-dash.life** 
 
 # Technologies Used 
 - React
@@ -92,45 +94,44 @@ My-Dash is a online legacy journal single-page application that allows users to 
 - User can **READ** all existing event entries
 - User can **UPDATE** an existing entry by changing one or all given entry fields (title, summary, photo)
 - User can **DELETE** an event entry entirely from their journal
-- Users can **COMMENT** within the My-Dash App and post them to Facebook with a photo.
-- User can **SHARE** My-Dash App on Facebook
+- Users can **COMMENT** within the My-Dashbook App and post them to Facebook with a photo.
+- User can **SHARE** My-Dashbook App on Facebook
 
-# My-Dash Screenshots
+# My-Dashbook Screenshots
 ## HOME LOGIN
-![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/Login.png)
+![](src/assets/Login.png)
 
 ## Google Sign-In 
 ![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/Gmail.png)
 
-## USER PROFILE PAGE
-![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/Home.png)
+## My-Dashbook USER PROFILE PAGE
+![](src/assets/Profile.png)
 
-## READ My-Dash Events
-![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/ReadEvents.png)
+## (Create) New My-Dashbook EVENT FORM
+![](src/assets/Add.png)
 
-## ADD NEW My-Dash Events FORM
-![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/AddEventForm.png)
+## (Read) My-Dashbook EVENTS
+![](src/assets/Dashbook.png)
 
-## EDIT My-Dash Events FORM
-![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/EditEvent.png)
 
-## FACEBOOK COMMENTS My-Dash CREATE
-![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/CommentCreate.png)
+## (Update) My-Dashbook EVENTS FORM
+![](src/assets/Edit.png)
 
-## FACEBOOK COMMENTS My-Dash Post
-![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/CommentDone.png)
+## My-Dashbook Comments CREATE
+![](src/assets/Comments.png)
 
-## FACEBOOK COMMENTS My-Dash Confirm Post to Facebook
-![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/My-DashConfirm.png)
+## My-Dashbook Posted in App
+![](src/assets/CommentsPost.png)
 
-## FACEBOOK COMMENTS Facebook Confirm Post 
-![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/FacebookCommentFacebook.png)
+## My-Dashbook Comments Confirm Post to Facebook
+![](src/assets/FacebookPostConfirmed.png)
 
-## FACEBOOK COMMENTS Posted on Facebook Profile
-![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/Post.png)
 
-## FACEBOOK SHARE My-Dash
-![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/FacebookShare.png)
+## My-Dashbook Posted on Facebook Profile
+![](src/assets/FacebookPost.png)
+
+## FACEBOOK SHARE My-Dashbook App
+![](src/assets/share.png)
 
 # Demo My-Dash at:
   www.my-dash.life
