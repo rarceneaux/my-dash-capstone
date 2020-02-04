@@ -99,39 +99,39 @@ Inspired by the poem "This Dash" written by Linda Ellis
 
 # My-Dashbook Screenshots
 ## HOME LOGIN
-![](src/assets/Login.png)
+![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/Login.png)
 
 ## Google Sign-In 
 ![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/Gmail.png)
 
 ## My-Dashbook USER PROFILE PAGE
-![](src/assets/Profile.png)
+![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/Profile.png)
 
 ## (Create) New My-Dashbook EVENT FORM
-![](src/assets/Add.png)
+![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/Add.png)
 
 ## (Read) My-Dashbook EVENTS
-![](src/assets/Dashbook.png)
+![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/Dashbook.png)
 
 
 ## (Update) My-Dashbook EVENTS FORM
-![](src/assets/Edit.png)
+![](shttps://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/Edit.png)
 
 ## My-Dashbook Comments CREATE
-![](src/assets/Comments.png)
+![](shttps://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/Comments.png)
 
 ## My-Dashbook Posted in App
-![](src/assets/CommentsPost.png)
+![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/CommentsPost.png)
 
 ## My-Dashbook Comments Confirm Post to Facebook
-![](src/assets/FacebookPostConfirmed.png)
+![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/FacebookPostConfirmed.png)
 
 
 ## My-Dashbook Posted on Facebook Profile
-![](src/assets/FacebookPost.png)
+![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/FacebookPost.png)
 
 ## FACEBOOK SHARE My-Dashbook App
-![](src/assets/share.png)
+![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/share.png)
 
 # Demo My-Dash at:
   www.my-dash.life
