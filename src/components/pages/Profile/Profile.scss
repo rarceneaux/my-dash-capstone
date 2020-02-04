@@ -3,19 +3,19 @@
   width:300px;
 }
   
-.view{
-  margin:15px;
+.ray, .login-time{
+  color:white;
+  padding: 50px;
+  
 }
 
 .what{
-  margin: 50px; 
+  height: 100%;
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/my-dash-93e26.appspot.com/o/images%2Fmy-dashbook.png?alt=media&token=346b6af6-5309-4ab0-b765-1da0feac17bc');
+  background-repeat:repeat-y;
+  background-attachment: fixed
 }
 
-.ray, .login-time{
-  margin: 15px;
-  color:black;
-}
-
-.fb-comments{
-  background-color:#e9ebee;
+.add{
+  margin: 20px;
 }

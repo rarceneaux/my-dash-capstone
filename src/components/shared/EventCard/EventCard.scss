@@ -4,15 +4,17 @@
 }
 
 .EventCard{
-  height: 700px;
+  height: 750px;
   width: 500px;
-  background-image: url('https://images.all-free-download.com/images/graphicthumb/close_up_of_text_on_open_bible_596615.jpg');
   background-repeat: no-repeat;
-background-color:#e9ebee;
+  background-color:#e9ebee;
   margin: 25px;
   box-sizing: border-box;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
   border-radius: 25px;
+  opacity: 95%;
+  color: #4267b2;
+  padding: 25px;
 }
 
 .edit{
@@ -23,10 +25,11 @@ background-color:#e9ebee;
 img{
   height: 300px;
   width:300px;
+  border: #4267b2;
 }
 
 
-.event-pic{
+.event-pic-rounded{
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -38,3 +41,6 @@ img{
   background-color: #e9ebee;
 }
 
+.card-title{
+  padding: 15px;
+}

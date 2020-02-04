@@ -1,8 +1,32 @@
 .fb-comments{
-  background-color:#e9ebee; 
+  background-color:#e9ebee;
+  border-radius: 25px; 
+  // margin: 20 0 0 0;
 }
 
-.comments{
-  color:black;
-  margin-top: 50px;
+.com{
+  color: #385898;
+  font-weight: bolder;
+}
+
+.b{
+  height: 100vh;
+  padding: 50px;
+  background-image: url('https://images.unsplash.com/photo-1525538182201-02cd1909effb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1334&q=80');
+  background-repeat: no-repeat;
+}
+
+.cancel{
+  display: flex;
+  color: #385898;
+  border: solid  ;
+  width: 150px;
+  justify-content: center;
+  background-color:#e9ebee;
+}
+
+.back{
+  display: flex;
+  justify-content: center;
+  padding: 5px;
 }

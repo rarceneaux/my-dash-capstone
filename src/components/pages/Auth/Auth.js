@@ -13,11 +13,11 @@ class Auth extends React.Component {
 
     render() {
       return (
-      <div className="Auth my-5">
-        <div className="d-flex justify-content-center mt-r test">
-        <button className="btn btn-dark l;" onClick={this.loginClickEvent}><span>Login</span></button>
+      <div className="Auth">
+        {/* <div className="d-flex justify-content-center mt-r test"> */}
+        <button className="btn btn-dark-a" onClick={this.loginClickEvent}><h1 className="whatever">Login</h1></button>
       </div>
-      </div>
+      // </div>
       );
     }
 }

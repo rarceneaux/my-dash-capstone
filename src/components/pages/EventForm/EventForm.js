@@ -101,7 +101,7 @@ render() {
       <div className="EventForm">
          <form className="event-details">
        <div className="form-group">
-         <label htmlFor="event-title">Dash Title</label>
+         <label htmlFor="event-title"><h3>Dash Title</h3></label>
          <input
          type="text"
          className="form-control"
@@ -112,7 +112,7 @@ render() {
          />
        </div>
        <div className="form-group">
-         <label htmlFor="event-summary">Dash Summary</label>
+         <label htmlFor="event-summary"><h3>Dash Summary</h3></label>
          <input
          type="text"
          className="form-control"
@@ -137,7 +137,7 @@ render() {
          ? <button className="btn btn-dark" disabled={isUploading} onClick={this.editEventAEvent}>Save Dash</button>
          : <button className="btn btn-dark" disabled={isUploading} onClick={this.saveEventAEvent}>Save Dash</button>
        }
-       <Link className="btn btn-dark cancel" to={'/event'}>Cancel</Link>
+       <Link className="btn btn-dark cancel" to={'/'}>Cancel</Link>
       </form>
       </div>
   );
