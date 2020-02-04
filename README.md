@@ -118,7 +118,7 @@ Once you login with your google email account:
 ![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/CommentCreate.png)
 
 ## FACEBOOK COMMENTS My-Dash Post
-![](src/assets/CommentDone.png)
+![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/CommentDone.png)
 
 ## FACEBOOK COMMENTS My-Dash Confirm Post to Facebook
 ![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/My-DashConfirm.png)

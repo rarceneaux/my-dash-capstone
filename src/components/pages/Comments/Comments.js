@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import './Comments.scss';
 
 class Comments extends React.Component {
@@ -14,6 +16,7 @@ class Comments extends React.Component {
     };
 
     // Load the SDK asynchronously
+    // eslint-disable-next-line func-names
     (function (d, s, id) {
       let js;
       const fjs = d.getElementsByTagName(s)[0];
@@ -29,8 +32,11 @@ class Comments extends React.Component {
 
   render() {
     return (<div className="b">
-      <h1 className="comments">My-Dash Comments</h1>
-    <div className="fb-comments" data-href="https://my-dash-93e26.firebaseapp.com/" data-width="700" data-numposts="10"></div>
+      <h1 className="com">my-dashbook Comments</h1>
+      <div className="back">
+      <Link className="cancel" to={'/'}>Return</Link>
+      </div>
+    <p className="fb-comments" data-href="https://my-dash-93e26.firebaseapp.com/" data-width="700" data-numposts="10" ></p>
     </div>
     );
   }
