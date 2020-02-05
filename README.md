@@ -113,12 +113,11 @@ Inspired by the poem "This Dash" written by Linda Ellis
 ## (Read) My-Dashbook EVENTS
 ![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/Dashbook.png)
 
-
 ## (Update) My-Dashbook EVENTS FORM
-![](shttps://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/Edit.png)
+![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/Edit.png)
 
 ## My-Dashbook Comments CREATE
-![](shttps://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/Comments.png)
+![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/Comments.png)
 
 ## My-Dashbook Posted in App
 ![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/CommentsPost.png)
