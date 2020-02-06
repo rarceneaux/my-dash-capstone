@@ -70,7 +70,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 # My-Dashbook Application Overview
 My-Dashbook is a online legacy journal single-page application that allows users to sign-in with Google. Once a user is logged-in they will have the ability to add a new journal entry, edit an entry, view all entries, and delete an entry. Users can create, edit, and delete comments within the My-Dashbook app and post them to Facebook with a photo to share with anyone on Facebook.
 
-Inspired by the poem "This Dash" written by Linda Ellis
+Inspired by the poem "The Dash" written by Linda Ellis
 
 **Demo My-Dashbook: www.my-dash.life** 
 
