@@ -72,8 +72,6 @@ My-Dashbook is a online legacy journal single-page application that allows users
 
 Inspired by the poem "The Dash" written by Linda Ellis
 
-**Demo My-Dashbook: www.my-dash.life** 
-
 # Technologies Used 
 - React
 - Facebook for Developers
@@ -132,5 +130,4 @@ Inspired by the poem "The Dash" written by Linda Ellis
 ## FACEBOOK SHARE My-Dashbook App
 ![](https://raw.githubusercontent.com/rarceneaux/my-dash-capstone/master/src/assets/share.png)
 
-# Demo My-Dash at:
-  www.my-dash.life
+
